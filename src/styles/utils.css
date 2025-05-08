@@ -1,0 +1,83 @@
+/* Mobile first responsiveness */
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  /* border: 1px solid red; */
+}
+
+
+@media (min-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
+}
+
+
+@media (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+}
+
+
+@media (min-width: 425px) {
+  .container {
+    max-width: 425px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .container {
+    max-width: 2560px;
+  }
+}
+
+
+/* @media (min-width: 320px) { */
+/* } */
+
+
+/* @media (min-width: 375px) { */
+/* } */
+
+
+/* @media (min-width: 425px) { */
+/* } */
+
+
+/* @media (min-width: 768px) { */
+/* } */
+
+
+/* @media (min-width: 1024px) { */
+/* } */
+
+
+/* @media (min-width: 1440px) { */
+/* } */
+
+/* @media (min-width: 2560px) { */
+/* } */

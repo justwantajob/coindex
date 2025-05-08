@@ -1,0 +1,67 @@
+/* Pre configured and default styles */
+
+@font-face {
+  font-family: 'IBMPlexMono-Regular';
+  src: url('../fonts/IBMPlexMono-Regular.woff2') format('woff2');
+}
+
+:root {
+  color: var(--color-text-base);
+  font-family: 'IBMPlexMono-Regular', sans-serif;
+
+  --color-background: rgb(21, 21, 25);
+  --color-widget-background: rgb(23, 23, 28);
+  --color-widget-border: rgb(30, 30, 36);
+
+  /* Text Colors */
+  --color-primary: rgb(217, 195, 140);
+  --color-positive: rgb(64,176, 133);
+  --color-negative: rgb(232, 125, 125);
+  --color-text-base: rgb(139, 139, 156);
+  --color-text-highlight: rgb(214, 214, 220);
+  --color-text-subdue: rgb(82, 82, 96);
+
+  /* Units */
+  --border-radius: 8px;
+
+  --default-pady: 16px;
+  --default-padx: 16px;
+
+  --default-my: 24px;
+  --default-mx: 8px;
+
+  --default-text-size: 10px;
+  --default-heading-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-background);
+
+  padding-top: var(--default-pady);
+  padding-left: var(--default-padx);
+  padding-right: var(--default-padx);
+}
+
+.container {
+  background-color: var(--color-widget-background);
+  border: 1px solid var(--color-widget-border);
+  border-radius: var(--border-radius);
+
+  padding: var(--default-pady) var(--default-padx);
+}
+
+h1 {
+  color: var(--color-primary);
+  font-size: var(--default-heading-size);
+}
+
+p {
+  color: var(--color-text-subdue);
+  font-size: var(--default-text-size);
+}
