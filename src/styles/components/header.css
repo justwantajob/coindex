@@ -50,6 +50,7 @@
 }
 
 .header-nav {
+  display: none;
   padding-right: var(--default-padx);
 }
 
@@ -73,4 +74,10 @@
 
 .header-nav-list-item-link:hover {
   color: var(--color-highlight);
+}
+
+@media (min-width: 768px) {
+  .header-nav {
+    display: block;
+  }
 }
