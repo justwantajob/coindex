@@ -30,7 +30,7 @@
   --default-my: 24px;
   --default-mx: 8px;
 
-  --default-text-size: 10px;
+  --default-text-size: 14px;
   --default-heading-size: 16px;
 }
 
@@ -38,6 +38,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  user-select: none;
 }
 
 body {
