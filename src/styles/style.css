@@ -74,7 +74,4 @@ body {
 
 main {
   margin-top: calc(var(--default-mx) + var(--default-mx));
-
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
 }

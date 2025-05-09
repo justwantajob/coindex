@@ -21,12 +21,6 @@
 
     <header class="header container">
       <div class="header-logo-container">
-        <!-- <button class="header-logo-pushable">
-          <span class="header-logo-front">
-            C
-          </span>
-        </button> -->
-
         <div class="header-logo">
           coindex
         </div>
@@ -45,22 +39,19 @@
     </header>
 
     <main class="container">
-      <section class="section-prices-container">
+
+      <section class="section-prices-container js-section-prices-container">
         <div class="section-prices-header">
-          <h3 class="section-prices-title">Prices</h3>
-          <h4 class="section-prices-subtitle">Market Cap</h4>
+          <div class="section-prices-body">
+            <h3 class="section-prices-title">Prices</h3>
+            <h4 class="section-prices-subtitle">Market Cap</h4>
+          </div>
+          <div class="last-update-time js-last-update-time"></div>
         </div>
 
-        <div class="section-prices-body">
-          <div class="cryptocurrency-info-container">
-            <div class="cryptocurrency-icon"><img src="./src/assets/bitcoin.png" alt="bitcoin icon"></div>
-            <div class="cryptocurrency-name">Bitcoin</div>
-            <div class="cryptocurrency-abbreviation">BTC</div>
-            <div class="cryptocurrency-price">$103,212</div>
-            <div class="cryptocurrency-price-change-rate">+0.48%</div>
-          </div>
-        </div>
+        <div class="cryptocurrency-cards js-cryptocurrency-cards"></div>
       </section>
+
     </main>
 
     <script type="module" src="/src/scripts/main.js"></script>
