@@ -1,0 +1,74 @@
+.section-prices-container {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--default-gap) * 3);
+
+  background-color: var(--color-background);
+  border: 1px solid var(--color-widget-border);
+  border-radius: var(--border-radius);
+
+  padding: var(--default-pady) var(--default-padx);
+}
+
+.section-prices-header {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--default-gap) / 2);
+}
+
+.section-prices-title {
+  color: var(--color-text-highlight);
+  font-size: var(--default-header-size);
+}
+
+.section-prices-subtitle {
+  color: var(--color-text-subdue);
+  font-size: var(--default-text-size);
+}
+
+/* .section-prices-divider {
+  border-top: 1px solid var(--color-widget-border);
+} */
+
+.section-prices-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--default-gap);
+}
+
+.cryptocurrency-info-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cryptocurrency-icon {
+  height: 14px;
+  width: 14px;
+}
+
+.cryptocurrency-icon img {
+  height: 100%;
+  width: 100%;
+}
+
+.cryptocurrency-name {
+  color: var(--color-text-subdue);
+  font-size: var(--default-text-size);
+}
+
+.cryptocurrency-abbreviation {
+  color: var(--color-text-subdue);
+  font-size: var(--default-text-size);
+}
+
+.cryptocurrency-price {
+  color: var(--color-text-subdue);
+  font-size: var(--default-text-size);
+}
+
+.cryptocurrency-price-change-rate {
+  color: var(--color-positive);
+  font-size: var(--default-text-size);
+}

@@ -13,6 +13,7 @@ dist-ssr
 *.local
 
 *.woff2
+assets
 
 # Editor directories and files
 .vscode/*
