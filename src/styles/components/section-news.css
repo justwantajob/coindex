@@ -1,0 +1,18 @@
+.section-news-container {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--default-gap) * 2);
+}
+
+.section-news-head {
+  color: var(--color-text-base);
+  font-size: var(--default-header-size);
+}
+
+.section-news-body {
+  background-color: var(--color-background);
+  border: 1px solid var(--color-widget-border);
+  border-radius: var(--border-radius);
+
+  padding: calc(var(--default-pady) / 2) calc(var(--default-padx) / 2);
+}
