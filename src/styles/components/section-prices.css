@@ -1,14 +1,14 @@
 .section-prices-container {
   display: flex;
   flex-direction: column;
-  gap: var(--default-gap);
+  gap: calc(var(--default-gap) * 2);
   border-radius: var(--border-radius);
 }
 
 .section-prices-header {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
 }
 
@@ -21,6 +21,27 @@
 .section-prices-subtitle {
   color: var(--color-text-subdue);
   font-size: var(--default-text-size);
+}
+
+.last-update-time {
+  color: var(--color-text-subdue);
+  font-size: var(--default-text-size);
+  display: flex;
+  align-items: center;
+  gap: var(--default-gap);
+}
+
+.last-update-time-icon {
+  width: 14px;
+  height: 14px;
+  color: var(--color-text-subdue);
+
+  cursor: pointer;
+  transition: color .3s ease;
+}
+
+.last-update-time-icon:hover {
+  color: var(--color-primary);
 }
 
 .cryptocurrency-cards {
@@ -40,6 +61,13 @@
   border-radius: var(--border-radius);
 
   padding: calc(var(--default-pady) / 2) calc(var(--default-padx) / 2);
+
+  transition: background-color .3s ease;
+  cursor: pointer;
+}
+
+.cryptocurrency-card:hover {
+  background-color: var(--color-widget-background);
 }
 
 .cryptocurrency-card-head,
@@ -77,25 +105,4 @@
 
 .cryptocurrency-price-change-rate {
   font-size: var(--default-text-size);
-}
-
-.last-update-time {
-  color: var(--color-text-subdue);
-  font-size: var(--default-text-size);
-  display: flex;
-  align-items: center;
-  gap: var(--default-gap);
-}
-
-.last-update-time-icon {
-  width: 16px;
-  height: 16px;
-  color: var(--color-text-subdue);
-
-  cursor: pointer;
-  transition: color .3s ease;
-}
-
-.last-update-time-icon:hover {
-  color: var(--color-primary);
 }
