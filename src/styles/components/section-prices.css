@@ -13,7 +13,7 @@
 }
 
 .section-prices-title {
-  color: var(--color-text-highlight);
+  color: var(--color-text-base);
   font-size: var(--default-header-size);
   margin-bottom: calc(var(--default-gap) / 2);
 }

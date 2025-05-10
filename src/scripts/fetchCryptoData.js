@@ -31,7 +31,7 @@ export async function fetchCryptoData() {
       cryptocurrencyCardsHTML += `
         <div class="cryptocurrency-card">
           <div class="cryptocurrency-card-head">
-            <div class="cryptocurrency-icon"><img src="${coin.image}" alt="cryptocurrency icon"></div>
+            <div class="cryptocurrency-icon"><img src="${coin.image}" alt="${coin.name} icon"></div>
             <div class="cryptocurrency-name">${formattedCoinName}</div>
             <div class="cryptocurrency-abbreviation">${coin.symbol.toUpperCase()}</div>
           </div>
@@ -57,8 +57,9 @@ export async function fetchCryptoData() {
       `;
 
   } catch (error) {
-    console.error('Error fetching cryptocurrency data:', error);
-  }
+      console.error('Error fetching cryptocurrency data:', error);
+      cryptocurrencyCardsContainer.innerHTML = '<p>Error loading data. Please try again later.</p>';
+    }
 
   document.addEventListener('click', (event) => {
     if (event.target.closest('.js-last-update-time-icon')) {
