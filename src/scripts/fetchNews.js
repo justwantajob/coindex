@@ -7,7 +7,7 @@ export function fetchNews() {
       return;
     }
 
-    const apiKey = '74a66d60205846b6a448dfb81ba5d0a0';
+    const apiKey = [YOUR_API_KEY];
     const apiURL = `https://newsapi.org/v2/everything?q=cryptocurrency&apiKey=${apiKey}`;
   
     fetch(apiURL)
