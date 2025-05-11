@@ -1,5 +1,6 @@
 // IMPORTING JS
 import { fetchCryptoData } from './fetchCryptoData.js';
+import { fetchNews } from './fetchNews.js';
 
 import '../styles/modern-normalize.css';
 import '../styles/style.css';
@@ -9,4 +10,5 @@ import '../styles/components/section-prices.css';
 import '../styles/components/section-news.css';
 import '../styles/utils.css';
 
+fetchNews();
 fetchCryptoData();
